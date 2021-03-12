@@ -69,7 +69,7 @@ gdd_sine <- function(min, max, base, upper) {
 
 # read in PRISM climate data
 prism_in <- 
-  list.files("prism_data", full.names = T) %>%
+  list.files("antigo", full.names = T) %>%
   map_dfr(read_csv, skip = 10) %>%
   rename(
     "tmin_f" = `tmin (degrees F)`,
